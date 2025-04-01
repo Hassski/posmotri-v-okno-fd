@@ -58,6 +58,7 @@ ol {
 .result__video-container {
   min-inline-size: 711px;
   position: relative;
+  padding-bottom: 12px;
 }
 
 .result__video {
@@ -78,7 +79,7 @@ ol {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
-  padding-block-start: 11px;
+  padding-bottom: 9px;
 }
 
 .search-form:last-child {
@@ -100,7 +101,7 @@ ol {
   display: flex;
   flex-direction: row;
   gap: 15px;
-  padding-block-start: 4px;
+  padding-bottom: 5px;
 }
 
 .search-form__label {
@@ -171,8 +172,8 @@ ol {
   content: "";
   display: block;
   position: absolute;
-  top: 50%;       
-  left: 50%;      
+  top: 45%;       
+  left: 45%;      
   transform: translate(-50%, -50%); 
   inline-size: 15px;
   block-size: 15px;
@@ -233,16 +234,12 @@ ol {
 
 .title {
   width: 260px;
-  min-height: 210px;
   font-family: "Oswald", sans-serif;
   font-weight: 700;
   font-size: 75px;
   line-height: 0.94;
   text-transform: uppercase;
-  padding-top: 20px;
-  position: absolute;
-  top: -95px;
-  left: 20px;
+  padding-bottom: 30px;
 }
 
 .content__accent {
@@ -253,18 +250,14 @@ ol {
 .content__accent::after {
   position: relative;
   content: "-";
-  top: -4px;;
+  top: -7px;;
 }
 
 .content__list-container {
-  max-block-size: 320px; 
+  max-block-size: 300px; 
   overflow-y: auto; 
   position: relative;
-  padding-right: 2px;
-  padding-top: 20px;
-  position: absolute;
-  top: 140px;
-  left: 20px;
+  top: -8px;
 }
 
 .content__list {
@@ -284,6 +277,11 @@ ol {
 .content__list-container::-webkit-scrollbar-thumb {
   background: #D9D9D9;
   border-radius: 2px;
+}
+
+.content__list-item:not(:last-child) {
+  padding-block-end: 32px;
+  width: 196px;
 }
 
 .content__card-link {
@@ -318,7 +316,6 @@ ol {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: flex-start;
-  padding-bottom: 32px;
 }
 
 .content__video-card-description-container {
@@ -330,30 +327,36 @@ ol {
   font-weight: 700;
   font-size: 30px;
   line-height: 100%;
+  gap: 6px;
   text-transform: uppercase;
-  padding-block-end: 6px;
+  padding-top: 2.4px;
+  padding-block-end: 5px;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  width: 196px;         
+  max-width: 196px;
 }
 
 .content__video-card-description {
+  font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
-  line-height: 90%;
+  line-height: 16.2px;
+  size: 18px;
 }
 
 .content__video-card-thumbnail {
   display: block;
   justify-self: end;
   inline-size: 194px;
-  block-size: 103px;
+  height: 102px;
   object-fit: cover;
   object-position: center;
 }
 
 .more-button {
   padding: 5.5px 146px;
-  white-space: nowrap
+  margin-top: 32px;
 }
 
 .more-button:focus-visible {
