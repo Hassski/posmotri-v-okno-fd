@@ -5,6 +5,7 @@
   justify-content: center;
   align-items: center;
   background-color: #545050;
+  max-height: 386px;
 }
 
 .error__title {
